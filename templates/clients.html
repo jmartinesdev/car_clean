@@ -41,19 +41,22 @@
                 <hr style="background-color:gray;">
                 <div class="add-cars">
                     <h3>Cars</h3>
-                    <span class="btn-add-car" onclick="add_carro()">+ Add a Car</span>
+                    <span class="btn-add-car" onclick="addCar()">+ Add a Car</span>
       
-                    <div id="form-carro">
+                    <div id="form-car">
       
                     </div>
       
                 </div>
       
                 <br>
-                <input type="submit" value="register" class="btn-main">
+                <input type="submit" value="Register" class="btn-main">
       
             </form>
             
         </div>
     </div>
+
+    <script src="{% static 'clients/js/clients.js' %}"></script>
+
 {% endblock %}
