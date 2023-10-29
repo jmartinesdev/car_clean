@@ -12,20 +12,19 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 85px;
+    width: 78px;
     background: #347AA8;
-    padding: 5px 15px;
+    padding: 6px 14px;
     transition: all 0.5s ease;
     z-index: 99;
-    color: black;
 }
 
 .sidebar.open {
-    width: 200px;
+    width: 250px;
 }
 
 .sidebar .logo-details {
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     position: relative;
@@ -54,6 +53,7 @@
     top: 50%;
     right: 0;
     font-size: 20px;
+    transform: translateY(-50%);
     transition: all 0.4s ease;
     text-align: center;
     cursor: pointer;
@@ -113,3 +113,25 @@
     display: none;
 }
 
+.sidebar input {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    width: 5px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    background: #188DDB;
+}
+
+.sidebar.open input {
+    padding: 0 20px 0 50px;
+    width: 100%;
+}
+
+.sidebar .bx-search{
+    
+}
