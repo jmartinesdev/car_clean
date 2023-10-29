@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def clients(request):
-    return HttpResponse('Here is clients page')
+    return render(request, 'clients.html')
