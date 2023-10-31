@@ -12,8 +12,8 @@ class Clients(models.Model):
 class Cars(models.Model):
     car = models.CharField(max_length=20)
     regCar = models.CharField(max_length=8)
-    yearCar = models.IntegerField()
-    client = models.ForeignKey(Clients, on_delete=models.CASCADE)
+    year = models.IntegerField()
+    clients = models.ForeignKey(Clients, on_delete=models.CASCADE)
     
     def __str__(self) -> str:
         return self.car
