@@ -25,26 +25,28 @@
                 <div class="row">
                     <div class="col-md">
                         <p>Name:</p>
-                        <input type="text" class="form-control" placeholder="Name" name="name">
+                        <input type="text" class="form-control" placeholder="Name" name="name" value={{'name'}}>
                     </div>
                     <div class="col-md">
                         <p>Surname:</p>
-                        <input type="text" class="form-control" placeholder="Surname" name="surname">
+                        <input type="text" class="form-control" placeholder="Surname" name="surname" value={{'surname'}}>
                     </div>
                 </div>
                 <br>
                 <p>E-mail:</p>
-                <input type="email" class="form-control" placeholder="nome@email.com" name="email">
+                <input type="email" class="form-control" placeholder="nome@email.com" name="email" value={{'email'}}>
                 <br>
                 <p>Phone Number:</p>
-                <input type="text" class="form-control" placeholder="__.___.____" name="phone">
+                <input type="text" class="form-control" placeholder="__.___.____" name="phone" value={{'phone'}}>
                 <hr style="background-color:gray;">
                 <div class="add-cars">
                     <h3>Cars</h3>
                     <span class="btn-add-car" onclick="addCar()">+ Add a Car</span>
       
                     <div id="form-car">
-      
+                        {% for car, r_car, y in car_models%}
+                            {{car}} {{r_car}} {{y}}
+                        {% endfor%}
                     </div>
       
                 </div>

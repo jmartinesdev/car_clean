@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Clients, Cars
+import re
 
 # Create your views here.
 def clients(request):
@@ -14,6 +15,14 @@ def clients(request):
         cars = request.POST.getlist('car')
         regCar = request.POST.getlist('reg-car')
         year = request.POST.getlist('year')
+        
+        client = Clients.objects.filter(phone=phone)
+        
+        if client.exists():
+            return render(request, 'clients.html', {'name': name, 'surname': surname, 'email': email, 'car':zip(cars, regCar, year)})
+        
+        if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
+            return render(request, '.clients.html', {'name': name, 'surname': surname, 'phone': phone, 'car':zip(cars, regCar, year)})
     
         client = Clients(
             name = name,
@@ -27,6 +36,3 @@ def clients(request):
         for car, r_car, y in zip(cars, regCar, year):
             car_models = Cars(car=car, regCar=r_car, year=int(y), clients=client)
             car_models.save()
-            
-        
-        return HttpResponse('teste')
