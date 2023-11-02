@@ -19,10 +19,10 @@ def clients(request):
         client = Clients.objects.filter(phone=phone)
         
         if client.exists():
-            return render(request, 'clients.html', {'name': name, 'surname': surname, 'email': email, 'car':zip(cars, regCar, year)})
+            return render(request, 'clients.html', {'name': name, 'surname': surname, 'phone': phone, 'email': email, 'cars':zip(cars, regCar, year)})
         
         if not re.fullmatch(re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'), email):
-            return render(request, '.clients.html', {'name': name, 'surname': surname, 'phone': phone, 'car':zip(cars, regCar, year)})
+            return render(request, 'clients.html', {'name': name, 'surname': surname, 'phone': phone, 'cars':zip(cars, regCar, year)})
     
         client = Clients(
             name = name,
