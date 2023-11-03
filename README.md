@@ -24,3 +24,13 @@ The system validates the email entered using a regex pattern. If the email forma
 
 ### 4. Save Details
 Once all details are entered correctly, the client's details and their associated cars are saved in the database.
+
+# Dependencies:
+
+* Django
+* Python's regex library (re)
+
+# Database Models:
+
+- Clients: This model stores client details such as name, surname, email, and phone.
+- Cars: This model keeps a record of cars associated with a client. It has fields for car name, registration, year, and a foreign key linking to the client.
