@@ -12,7 +12,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 78px;
+    width: 90px;
     background: #347AA8;
     padding: 6px 14px;
     transition: all 0.5s ease;
@@ -31,10 +31,9 @@
 }
 
 .sidebar .logo-details .logo-name {
-    color: #fff;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
 }
 
@@ -50,8 +49,8 @@
 
 .sidebar .logo-details #btn {
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 80%;
+    right: 25px;
     font-size: 20px;
     transform: translateY(-50%);
     transition: all 0.4s ease;
@@ -91,7 +90,6 @@
     z-index: 3;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
-    background: #fff;
     border-radius: 4px;
     font-size: 15px;
     font-weight: 400;
@@ -111,6 +109,11 @@
 
 .sidebar.sidebar.open li .tooltip {
     display: none;
+    color: black;
+}
+
+.links-name {
+    color: black;
 }
 
 .sidebar input {
@@ -124,14 +127,9 @@
     border: none;
     border-radius: 12px;
     transition: all 0.5s ease;
-    background: #188DDB;
 }
 
 .sidebar.open input {
     padding: 0 20px 0 50px;
     width: 100%;
-}
-
-.sidebar .bx-search{
-    
 }

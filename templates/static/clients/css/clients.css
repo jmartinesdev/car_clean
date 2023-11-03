@@ -12,17 +12,19 @@
 }
 
 .btn-add-car {
-    background-color: #3E627A;
+    background-color: #188DDB;
     padding: 5px;
-    font-weight: bold;
+    font-weight: ;
     cursor: pointer;
+    color: black;
 }
 
 .btn-main {
     color: white;
     border: none;
-    background-color: #3E627A;
+    background-color: #188DDB;
     padding: 5px;
     font-size: 30px;
+    color: black;
 }
 
