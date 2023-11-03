@@ -34,3 +34,8 @@ Once all details are entered correctly, the client's details and their associate
 
 - Clients: This model stores client details such as name, surname, email, and phone.
 - Cars: This model keeps a record of cars associated with a client. It has fields for car name, registration, year, and a foreign key linking to the client.
+
+# Future Improvements:
+- Add delete functionality for clients and cars.
+- Incorporate user authentication for better security.
+- To get started with this project, ensure you have Django set up, and then migrate the database models. Once done, you can run the server and navigate to the clients.html page to begin adding clients.
