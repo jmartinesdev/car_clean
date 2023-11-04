@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'carclean.urls'
+ROOT_URLCONF = 'car_clean.urls'
 
 TEMPLATES = [
     {
