@@ -6,7 +6,7 @@ import re
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'main.html')
 
 def clients(request):
     if request.method == "GET":
