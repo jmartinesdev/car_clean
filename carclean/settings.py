@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'car_clean.urls'
+ROOT_URLCONF = 'carclean.urls'
 
 TEMPLATES = [
     {
@@ -130,4 +130,4 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-django_heroku.settings(locals)
+django_heroku.settings(locals())
