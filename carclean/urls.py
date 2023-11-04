@@ -19,7 +19,7 @@ from django.urls import path, include
 from clients import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.home, name='clients'),
     path('admin/', admin.site.urls),
     path('clients/', include('clients.urls')),
 ]
