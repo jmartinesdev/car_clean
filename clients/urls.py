@@ -1,6 +1,9 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from django.contrib import admin
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
-    path('', views.clients, name="clients")
+    path('', RedirectView.as_view(url='clients/')),
+    path('admin/', admin.site.urls),
+    path('clients/', include('clients.urls')),
 ]

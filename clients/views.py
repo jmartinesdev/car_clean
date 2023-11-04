@@ -4,6 +4,10 @@ from .models import Clients, Cars
 import re
 
 # Create your views here.
+
+def home(request):
+    return render(request, 'home.html')
+
 def clients(request):
     if request.method == "GET":
         return render(request, 'clients.html')
