@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$5zfy!g2!r-c@elv77xfo6=utivpc!cz4gg-4pkjfo!(+#&e0+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['carclean.herokuapp.com']
 
 
 # Application definition
@@ -77,10 +77,7 @@ WSGI_APPLICATION = 'carclean.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
