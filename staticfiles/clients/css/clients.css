@@ -1,0 +1,30 @@
+.card-dashboard {
+    background-color: var(--main-color);
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-card {
+    font-size: 20px;
+}
+
+.btn-add-car {
+    background-color: #188DDB;
+    padding: 5px;
+    font-weight: ;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-main {
+    color: white;
+    border: none;
+    background-color: #188DDB;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+}
+
