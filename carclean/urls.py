@@ -20,6 +20,6 @@ from clients import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app/', include('app.urls')),
-    path('blog/', include('blog.urls')),
+    path('clients/', include('clients.urls')),
+    # path('service/', include('service.urls')),
 ]

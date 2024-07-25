@@ -5,3 +5,17 @@ function addCar(){
 
     container.innerHTML += html
 }
+
+function display_form(type){
+
+    add_client = document.getElementById('add-clients')
+    upd_client = document.getElementById('upd_client')
+
+    if(type == '1'){
+        upd_client.style.display = "none"
+        add_client.style.display = "block"
+    }else if(type == "2"){
+        upd_client.style.display = "block"
+        add_client.style.display = "none"
+    }
+}

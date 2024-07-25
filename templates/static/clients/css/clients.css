@@ -28,3 +28,7 @@
     color: black;
 }
 
+#upd_client{
+    display: none !important;
+}
+
