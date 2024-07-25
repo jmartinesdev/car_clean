@@ -1,13 +1,11 @@
 {% extends "main.html" %}
 {% load static %}
 
-{% block 'head' %}
-{% load static %}
+{% block head %}
     <link rel="stylesheet" href="{% static 'clients/css/clients.css' %}">
-
 {% endblock %}
 
-{% block 'dashboard'%}
+{% block dashboard %}
     <div class="container">
         <div class="row">
 
@@ -15,12 +13,12 @@
                 <p class="text-card">Add Client</p>
             </div>
 
-            <div onclick="display_form('1')" class="col-md card-dashboard">
+            <div onclick="display_form('2')" class="col-md card-dashboard">
                 <p class="text-card">Update Client</p>
             </div>
 
         </div>
-        <div class="add-clients">
+        <div id="add-clients" class="add-clients">
             <form action="{% url 'clients' %}" method="POST">{% csrf_token %}
                 <div class="row">
                     <div class="col-md">
@@ -70,11 +68,11 @@
             
         </div>
 
-    <div id="upd_client">
-    teste
-    </div>  
-
-    </div>
+        <div id="upd-clients">
+            teste
+        </div>  
+      
+    </div>    
 
     <script src="{% static 'clients/js/clients.js' %}"></script>
 

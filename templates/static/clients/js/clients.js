@@ -8,14 +8,17 @@ function addCar(){
 
 function display_form(type){
 
-    add_client = document.getElementById('add-clients')
-    upd_client = document.getElementById('upd_client')
+    add_clients = document.getElementById('add-clients')
+    upd_clients = document.getElementById('upd-clients')
 
-    if(type == '1'){
-        upd_client.style.display = "none"
-        add_client.style.display = "block"
+    if(type == "1"){
+        upd_clients.style.display = "none"
+        add_clients.style.display = "block"
+
     }else if(type == "2"){
-        upd_client.style.display = "block"
-        add_client.style.display = "none"
+        add_clients.style.display = "none";
+        upd_clients.style.display = "block"
     }
+
 }
+
